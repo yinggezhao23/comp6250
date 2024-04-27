@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Seminar 1: Innovating Dentistry Through Robotics and Nanotechnology</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="interview-with-dr-amal-zaiter-innovating-dentistry-through-robotics-and-nanotechnology">Interview with Dr. Amal Zaiter: Innovating Dentistry Through Robotics and Nanotechnology</h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong> Dr. Ala Barhoum:</strong> Hi, everyone. I extend a warm welcome to our esteemed guest, Dr. Amal Zaiter. We deeply appreciate you taking the time to join us today. Your presence enriches our learning experiences and we are eager to hear about your remarkable journey and innovative endeavors. Now without further ado, let's begin our exploration. We have a few questions lined up, but we encourage a fluid conversation, so please feel free to share your insights and experiences openly. Once again, thank you, Amal, for being here today. Let's dive into our conversation.</p>
+<p><strong>Dr. Amal Zaiter:</strong> Thank you for having me. Thank you.</p>
+<h2 id="the-startup-journey">The Startup Journey</h2>
+<p><strong> Dr. Ala Barhoum:</strong> Could you please share the story of your startup with us and provide us a snapshot of where it stands currently?</p>
+<p><strong>Dr. Amal Zaiter:</strong> Perfect. So it all started with a casual conversation. I'm a dentist. I was not practicing anymore and I was having a chat with a colleague who later became my co-founder. He's an engineer, which is very relevant. Engineers are really into solving problems and he was asking me why I'm phasing out my clinical practice and I told him at the time that dentistry is, in my opinion, not being practiced according to very modern concepts. It has stagnated in what I thought 19th century fashion. And he, being the engineer, told me what's the solution in your opinion. I then said robotics and nanotechnology should offer something. He, being the engineer, did the research, went to IP research and came back to me and said, there's nothing out there, which was surprising to me. And he said, why don't we do it? So this is how it all started. We did maybe one year of deep research. We sat together countless times. We looked at other concepts. We looked at what's there in the IP, what's there in the papers. And we came up with the concept, started with patenting it and then started pitching the idea here in Canberra to Canberra Innovation Network, which was a collaboration between the academia, private sector and the government. And the ANU is a founding member of that cohort of the Canberra Innovation Network.</p>
+<h2 id="about-the-technology">About the Technology</h2>
+<p><strong> Dr. Ala Barhoum:</strong> Very interesting. So now it's all about the dental technology. Can you tell us more about the technology you are introducing?</p>
+<p><strong>Dr. Amal Zaiter:</strong> Yeah. So we look deeply at the root causes of why dentistry is a difficult profession, why patients generally dislike going to the dentist. So one of the key issues whenever you're talking about innovation is nobody wants a solution that looks for a problem. People want a problem that needs solutions. So we looked very, very deeply why dentistry gets on people's nerves, why people have trouble going to the dentist and why dentists also have sometimes trouble in reaching out and communicating to the patient and practicing what they like to practice. So the technology addresses these concerns. We address first and foremost the perception, the pain, the stigma, the needles, the drills, all the things that make people apprehensive when going to the dentist. So the technology combines photonics and robotics to get rid of needles, drills, pain, water irrigation inside the mouth and all those unpleasant sensations.</p>
+<h2 id="personal-journey-and-inspiration">Personal Journey and Inspiration</h2>
+<p><strong> Dr. Ala Barhoum:</strong> Very interesting. So Omar, we would love to hear more about your personal journey and how you came up with this idea. So there must have been a spark that led to conceive this product. Essentially, could you share the story of how it all began and what inspired you at the start of this journey?</p>
+<p><strong>Dr. Amal Zaiter:</strong> Yeah, so in this answer, I'll give my part of the view, but I have to also to acknowledge my co-founder, Allah Habib, who is the engineer, and I think he sparked it all by that conversation, by the question, why don't we do it? At the time, I thought he was crazy, to be honest, but he asked a very fundamental question and a very correct question. And I think our students today being between engineering and computer science would relate to that. We as clinicians are very trained to be conservative always, but as engineers, they're trained to solve problems. So the spark came when he said, why don't we do it? And he went actually to look in the right place, which is the IP. Personally, my journey was when I started practicing, I thought it was the practice is limited. We can't reach out to our patients and we have lots of good solutions as clinicians, but sometimes patients are unable to understand it, which is a failure on our side or unable to get it due to cost or other barriers. So I thought there were barriers that needed to be addressed. And this is why I started to face down my practice. I went to more holistic and overall type of practice, understanding more about health economics, health policies and all the things that related to. So I started to do that journey. And the journey ended up here in Australia and in the ANU itself doing a Master of Public Policy. So you might ask, what does a dentist do with a Master of Public Policy? But it helped me to understand. Yeah, yeah, yes, yes. Actually, this was quite relevant because sometimes there's tunnel vision and in dentistry, your tunnel vision is just being focused on the tooth, not on the entire problem. When we started, yeah, when we started Dentroid, we decided to look at the people before teeth. We realized that there are human factors and people centric factors that are not considered when companies or sometimes practitioners develop solutions for this particular profession. So we looked at, yeah, yeah.</p>
+<h2 id="collaboration-with-anu">Collaboration with ANU</h2>
+<p><strong> Dr. Ala Barhoum:</strong> OK, and what kind of collaboration you have with ANU now, is it kind of collaborating with researchers to improve a research and development or can you talk more about this?</p>
+<p><strong>Dr. Amal Zaiter:</strong> Yeah, that was a key, a key stage when we worked with the ANU. So we're collaborating with the School of Physics. If you recall, I mentioned that we're developing synergetic solutions between photonics and robotics. So the ANU is dealing with the photonics side, particularly the laser side of the thing. I am proud to say that we've been collaborating for almost four years with the ANU Center for Laser Physics. And we have recently also won an ARC grant together. So congratulations. Thank you very much for that. Which is also an interesting thing to consider when when doing innovation, especially in collaboration with the university, there are some really good resources to leverage here. And the project is about to start maybe perhaps March 2024.</p>
+<h2 id="the-team-and-mission">The Team and Mission</h2>
+<p><strong> Dr. Ala Barhoum:</strong> Interesting. So now I want to know more about your team and if you can tell more about your team, the mission that you have, how you're organizing things with your team in your startup.</p>
+<p><strong>Dr. Amal Zaiter:</strong> Yeah, I think it's it's very important when you're trying to look for innovative solutions is to find innovative people. There's a saying that doing repeating the same thing and expecting different results is is a form of stupidity. Actually, this is the definition of stupidity. So without being too harsh, it's sometimes we see too often that we bring the same people on the same table and expect different outcomes. Never going to happen in innovation. We are allowed to take a step back. And I think one of the important thing is to have a holistic overall approach towards thing and to get a holistic overall approach. You need to get people from other disciplines to look at the problem so that they can ask the right questions. What we did is we brought a team of different scientists, stakeholders, people who actually developed. We brought people who worked at Cochlear, people who worked at Apple, people who work at universities, who come from dentistry, come from medicine, come from physics and other types of discipline to sit together in the first few months, maybe perhaps a year or a couple of years. It was a difficult conversation because everybody seemed to speak a unique language. But then we managed to have everyone on board. And here comes the second thing, which is communication. Communication is key and I'm not exaggerating if I say that 50% of a problem or 50% of solutions actually lies in communication. I completely agree, especially when you have different people from different perspectives, different backgrounds, someone who's working in the industry, other one who's putting the rules and regulations of a government that makes it more challenging to communicate.</p>
+<h2 id="target-audience-and-product-development">Target Audience and Product Development</h2>
+<p><strong> Dr. Ala Barhoum:</strong> All right, and now let's talk more about your, like, go deeper and deeper to learn more about the product that you designed. So I'm just curious to know who are your people? And I mean, from a practical perspective, who was your target group when you have developed this idea with whom you're thinking about?</p>
+<p><strong>Dr. Amal Zaiter:</strong> Yes, so when we started, naturally it was directed toward dentists. But what we had in mind is actually people, everyone, you, myself, me, everyone we spoke to say, I don't like going to the dentist. Nobody has ever said to us that we like going to the dentist. So we are targeting people, everyday person. Communication is key. You have to understand the problem and you have to understand the solution. If you want to convince clinicians are usually very conservative in adopting new technology because they need to ensure that it really serves them and serves their patients. And the number one principle in medicine is do no harm. Before you do good, you have to ensure that you do no harm. And this is the maybe cornerstone of the regulatory approvals and the regulatory framework. So when they want to adopt new technology, they want to ensure that people like it, their patients would like it. So that's our main target group, everyone out there. When it comes to the team, normally when you have to develop a product, the backbone comes from engineering and that's important. We do have, we're lucky to have quite a few engineers working with us. However, developing new things, new type of thinking. So scientists and academics come here very handy because they open the horizon. They tell us what are the realms of the possible and the realms of the less possible, let me say. And then you need people with everyday life experience. So it's important also to have people who work with medical device companies or who actually develop product. And we also worked with development houses in some way. So you go to that house that's full of engineers and designers and you work with them on some aspects of the project. So that was good because they have the pulse of the day and they could tell you, yes, this is good, but it would be really difficult to manufacture. It looks good as a design. So you have also to bridge the gap between what you were dreaming of and what's possible to be scaled. One of the important thing about startup is that you have to develop solutions that are scalable. That's important and that's an important differentiation when working with academia. So when as academic or scientist, you're allowed to do solutions that are not really applicable today in the market. Maybe they would be applicable 10 years or 15 years. But if you are commercially driven, you have to develop solutions that could be in the market within a year or two. So they should be able to be transferred to an established manufacturer, for example, for scaling. And that's an important thing. There are lots of great ideas there, especially when we study. However, if innovation is all about ensuring that these ideas are first applicable, second scalable, the third one and more important than commercially viable.</p>
+<h2 id="legal-and-regulatory-challenges">Legal and Regulatory Challenges</h2>
+<p><strong> Dr. Ala Barhoum:</strong> Interesting, so, yes, that must be very challenging. I was wondering, like you said, you're thinking about people who are visiting that dentist, but do they have to have a specific condition to use your technology? Or it's it's kind of a technology that can be used by the dentist for all whoever is visiting the dentist. So can you clarify this point more, please?</p>
+<p><strong>Dr. Amal Zaiter:</strong> Yes, yes. So the technology is about robotics and photonics for mainstream dentistry. So principally it applies for everyone who wants to visit the dentist. So the and we like to think for ourselves as a platform for a series of products. The first and it begins from a mix of LED lights that hopefully will replace your local anesthetic injection at some point. So it's good to go to the dentist and being and have the the option not to have the needle in it and have something in like photonic solution as an alternative to induce some level of what we call anesthesia. So that's that's an important issue. On the other end of the spectrum, it's a full robotic system with with photonics and lasers built in where the dentist places a miniaturized application inside your mouth, a miniaturized assembly, and the dentist then controls it from their laptop or their workstation. So I know the idea is a little bit hard to envisage, but you can go to our website www.dentroid.com to have a bit of an idea more about. I'm sure the students who are interested will be visiting your website. That's really interesting. I was like wondering how are you dealing with the legal? Like issues and other parts of the question would be, is there any kind of communication with the people and have you ever been in touch with them, had a conversation, see how they are accepting new technologies? Have you ever had this kind of interaction? Because I know engineers are good at designing, optimizing, computer scientists are good at coding, but sometimes we lack these kind of skills that we need to communicate. We need to reflect on at some point and communicate with the public or the patients or the target people who are thinking of designing any technology.</p>
+<p><strong>Dr. Amal Zaiter:</strong> Yeah, yeah. I mentioned that we started by approaching Canberra Innovation Network. Canberra Innovation Network brings real life experience into the hands of entrepreneurs. And we did a course for six months called, I think, Lean Innovation Principle or something to this effect. The number one message was speak to the customer. Before you go and develop a solution, you have to ensure that it addresses a problem. And that's the heart of innovation. So what differs innovation from being just an inventor or a dreamer or something is that you actually went and spoke to heaps of potential clients or potential customers. So you have to speak to people. You cannot say I have a great solution for a problem and then there's no validation of the problem. So they told us for months and months that before you start your journey of innovation, you have to really satisfy yourself and later satisfy your backers that you have a problem. And it sounds it sounds maybe lame or simplistic, but it's really, really important to do that. We've spoken to hundreds of one hundred as a dentist. I knew this may be intuitively that people dislike the needle, but you would be actually asked, OK, we get it. But is this a real problem? Maybe it's a five minute thing that's been workable. Maybe people dislike it for five minutes and that's all. Maybe people are happy to find another solution around it. Maybe there's no solution. That's OK. Maybe that's the dentist will not chase another solution and pay thousands of dollars for it, for example. So you need to establish those parameters around the problem. Communications, once again, is key. When you go to talk to potential customers or investors, you have to communicate the issue without having spoken to many, many potential clients or customers. You cannot have this information with your heart and hand and say, yes, I know the problem. The second part of the question was about the legality. Yes, we work in a legal framework. That's very challenging, right? Yes, it is. There are when you do anything, you have to abide by the regulations and by the laws and understand your legal framework. And some solutions sometimes are really good. But the only reason that they're not applicable is that they cannot conform and comply with the current legal frameworks. And remember, Uber, when it started, has a lot of issues with the legal framework. They have to really put some good resources on their understanding around it. That's even more compounded when you're talking about medical devices and technology because you have to go through a regulatory approval by TGA here in Australia, FDA in the United States and in the EU, what we call the MDR. So that's very complicated. And sometimes, again, solutions that from an engineering point of view or from a technical point of view that are relatively straightforward, but they can be really complicated when you go to the regulator and present your case. That was from day one a major issue. And we we are addressing it by working hand in hand with regulatory affairs advisors. They are having a good look on everything that we do and checking everything before we even look at further and get more.</p>
+<h2 id="reflections-on-decision-making">Reflections on Decision Making</h2>
+<p><strong> Dr. Ala Barhoum:</strong> OK, well, that was really interesting to know more about your product and the start and how the thing started, but there must have been numerous decision points where you had to step back and reflect and make some choices. So, I mean, there are heaps of options that you might face when we have when we have faced a problem. So could you share a couple of these moments and explain what are the options and what you have selected and why?</p>
+<p><strong>Dr. Amal Zaiter:</strong> Yes, I think this applies across whole walks of life, not only innovation and entrepreneurship, but as an entrepreneur, one of the things that you face very early on is how to handle the advice that you get. You will typically get 10 to 15 views on anything and sometimes they're widely divergent. So sometimes people say absolutely don't go down that path and people say absolutely go down that path. But you as as the entrepreneur at the end of the day or the team of co-founders at the end of the day, you have to make the decision. This is important. First of all, do your research. That's really, really important. Whenever you're addressing any problem, you have to speak to people of who has expertise, people who have done it before you, which is more very, very important. Not only speak to subject matter experts, but to street smart and people who did this before you. Do your own research, ask around. But the more you ask, the more divergent views you will get. Have some really good communication. So sometimes you're not asking the right questions. And that happened a lot to us. And we learned it the hard way. We were not asking the right questions from the start. You have to ask the right question. You have to have some really good faith in what you do and in your abilities as well. And that's a balance because it's you could be delusional sometimes. You have also at the end of the day, accept the idea that also were taught to us that don't love your puppy. Sometimes people love their ideas to the tune that they dismiss any dissenting views. We have to be open to the idea of what if it doesn't work? What if I'm not what I'm doing is not the right thing about it. So you have to be prepared to do that. Yeah, yeah. Yeah. A 180 degree turn. You otherwise you might fail because if you think,</p>
+
+</body>
+</html>
